@@ -245,7 +245,7 @@ outputs:
         - python
         - ${{ pin_subpackage('ray-tune', exact=True) }}
         - dm-tree
-        - gymnasium ==1.1.1
+        - gymnasium ==1.3.0
         - lz4
         - ormsgpack >=1.7.0
         - pyyaml
