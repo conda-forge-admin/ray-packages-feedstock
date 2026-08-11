@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "2.55.1"
+  version: "2.57.0"
 
 recipe:
   name: ray-packages
@@ -10,7 +10,7 @@ recipe:
 
 source:
   url: https://github.com/ray-project/ray/archive/ray-${{ version }}.tar.gz
-  sha256: 1a486e45e0cd81e3e3cf1cce6022015b1bcb545bede840434819c97b2c74912a
+  sha256: 75b8ab2eab971b4c1bfb1bbe1c4636951b746c04a2541f02d0ce0716189f547c
   patches:
     - patches/0001-Disable-making-entry-scripts.patch
     - patches/0002-Ignore-warnings-in-event.cc-and-logging.cc.patch
@@ -27,7 +27,7 @@ source:
     - patches/0008-bazel-disable-strict-env.patch
 
 build:
-  number: 3
+  number: 0
   skip:
     - match(python, "<3.11")
 
